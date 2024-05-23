@@ -1,6 +1,7 @@
 """Browser tools and toolkit."""
 
 from langchain_community.tools.playwright.click import ClickTool
+from langchain_community.tools.playwright.input import InputTool
 from langchain_community.tools.playwright.current_page import CurrentWebPageTool
 from langchain_community.tools.playwright.extract_hyperlinks import (
     ExtractHyperlinksTool,
@@ -18,4 +19,5 @@ __all__ = [
     "GetElementsTool",
     "ClickTool",
     "CurrentWebPageTool",
+    "InputTool",
 ]

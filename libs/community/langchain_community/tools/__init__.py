@@ -201,6 +201,7 @@ if TYPE_CHECKING:
     )
     from langchain_community.tools.playwright import (
         ClickTool,
+        InputTool,
         CurrentWebPageTool,
         ExtractHyperlinksTool,
         ExtractTextTool,
@@ -349,6 +350,7 @@ __all__ = [
     "BingSearchRun",
     "BraveSearch",
     "ClickTool",
+    "InputTool",
     "CogniswitchKnowledgeRequest",
     "CogniswitchKnowledgeSourceFile",
     "CogniswitchKnowledgeSourceURL",

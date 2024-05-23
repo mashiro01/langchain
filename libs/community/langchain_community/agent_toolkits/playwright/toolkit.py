@@ -11,6 +11,8 @@ from langchain_community.tools.playwright.base import (
     lazy_import_playwright_browsers,
 )
 from langchain_community.tools.playwright.click import ClickTool
+from langchain_community.tools.playwright.input import InputTool
+
 from langchain_community.tools.playwright.current_page import CurrentWebPageTool
 from langchain_community.tools.playwright.extract_hyperlinks import (
     ExtractHyperlinksTool,
@@ -81,6 +83,7 @@ class PlayWrightBrowserToolkit(BaseToolkit):
         """Get the tools in the toolkit."""
         tool_classes: List[Type[BaseBrowserTool]] = [
             ClickTool,
+            InputTool,
             NavigateTool,
             NavigateBackTool,
             ExtractTextTool,
